@@ -1,11 +1,11 @@
-# `@sebastienrousseau/markdownlint-config`
+# `@sebastienrousseau/remark-config`
 
 > TODO: description
 
 ## Usage
 
 ```
-const markdownlintConfig = require('@sebastienrousseau/markdownlint-config');
+const remarkConfig = require('@sebastienrousseau/remark-config');
 
 // TODO: DEMONSTRATE API
 ```
