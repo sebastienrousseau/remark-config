@@ -34,7 +34,8 @@
     "index.mjs",
     "index.cjs",
     "index.d.ts",
-    "remark-config.svg"
+    "remark-config.svg",
+    "LICENSE"
   ],
   "publishConfig": {
     "access": "public"
