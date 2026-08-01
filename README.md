@@ -1,7 +1,7 @@
 <!-- SPDX-License-Identifier: ISC -->
 
 <p align="center">
-  <img src="https://cloudcdn.pro/remark-config/v1/logos/remark-config.svg" alt="remark-config logo" width="128" />
+  <img src="./remark-config.svg" alt="remark-config logo" width="128" />
 </p>
 
 <h1 align="center">@sebastienrousseau/remark-config</h1>
