@@ -1,35 +1,55 @@
 {
-  "author": "Sebastien Rousseau <sebastienrousseau@users.noreply.github.com>",
-  "bugs": {
-    "url": "https://github.com/sebastienrousseau/remark-config/issues"
-  },
-  "description": "Remark Configuration Files and rules",
-  "devDependencies": {
-    "remark-cli": "^10.0.1",
-    "remark-footnotes": "^4.0.1",
-    "remark-preset-lint-consistent": "^5.1.1",
-    "remark-preset-lint-markdown-style-guide": "^5.1.2",
-    "remark-preset-lint-recommended": "^6.1.2"
-  },
-  "files": [
-    "index.js"
-  ],
-  "homepage": "https://remark-config.dev",
-  "keywords": [
-    "remark"
-  ],
-  "license": "ISC",
-  "main": "index.js",
   "name": "@sebastienrousseau/remark-config",
-  "publishConfig": {
-    "access": "public"
-  },
+  "version": "1.0.0",
+  "description": "Shareable Remark lint configuration files and rules adhering to 2026 standards",
+  "author": "Sebastien Rousseau <sebastienrousseau@users.noreply.github.com>",
+  "license": "ISC",
+  "homepage": "https://github.com/sebastienrousseau/remark-config#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sebastienrousseau/remark-config.git"
   },
-  "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
+  "bugs": {
+    "url": "https://github.com/sebastienrousseau/remark-config/issues"
   },
-  "version": "0.0.3"
+  "keywords": [
+    "remark",
+    "remarkrc",
+    "remark-lint",
+    "markdown",
+    "linter"
+  ],
+  "main": "./index.cjs",
+  "module": "./index.mjs",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./index.mjs",
+      "require": "./index.cjs"
+    }
+  },
+  "files": [
+    "index.js",
+    "index.mjs",
+    "index.cjs",
+    "index.d.ts"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "node test/test.js",
+    "lint": "node test/test.js"
+  },
+  "peerDependencies": {
+    "remark-cli": ">=10.0.0"
+  },
+  "devDependencies": {
+    "remark-cli": "^12.0.0",
+    "remark-gfm": "^4.0.0",
+    "remark-preset-lint-consistent": "^6.0.0",
+    "remark-preset-lint-markdown-style-guide": "^6.0.0",
+    "remark-preset-lint-recommended": "^7.0.0"
+  }
 }
