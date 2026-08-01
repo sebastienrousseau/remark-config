@@ -22,24 +22,23 @@
 ## Contents
 
 **Getting Started**
-- [Install](#install) — npm, pnpm, yarn, bun
-- [Quick Start](#quick-start) — configuration in under a minute
+- [Installation](#installation) — Package manager commands
+- [Quick Start](#quick-start) — Configure in under a minute
 
-**Configuration Reference**
-- [Capabilities & Features](#capabilities--features) — design rationale & defaults
+**Features & Rule Showcase**
+- [AST Markdown Linting & GFM](#ast-markdown-linting-gfm) — Code comparison
 - [Module Compatibility](#module-compatibility) — Dual CJS/ESM & TypeScript declarations
-- [Integration Guide](#integration-guide) — setup in popular toolchains
 
-**Operational & Quality**
-- [Development & Verification](#development--verification) — running tests & validation
-- [Security & Attestation](#security--attestation) — supply chain security & SLSA attestation
-- [License](#license) — ISC License
+**Governance & Quality**
+- [Development & Testing](#development--testing) — Local validation
+- [Security & Compliance](#security--compliance) — SLSA attestation & vulnerability policy
+- [Author & License](#author--license) — Open source license
 
 ---
 
-## Install
+## Installation
 
-### Package Managers
+Install using your preferred package manager:
 
 ```bash
 # npm
@@ -55,13 +54,6 @@ yarn add -D @sebastienrousseau/remark-config
 bun add -d @sebastienrousseau/remark-config
 ```
 
-### Version Matrix
-
-| Tool | Supported Version | Package Version |
-|---|---|---|
-| Node.js | `>=18.0.0` | `1.0.0` |
-| Remark | Latest Stable | `1.0.0` |
-
 ---
 
 ## Quick Start
@@ -69,16 +61,18 @@ bun add -d @sebastienrousseau/remark-config
 ### In `package.json`
 
 ```json
-"remarkConfig": { "plugins": ["@sebastienrousseau/remark-config"] }
+{
+  "remark": "@sebastienrousseau/remark-config"
+}
 ```
 
-### In CommonJS Configuration (`.remarkrc.json`)
+### In CommonJS Configuration
 
 ```js
 module.exports = require("@sebastienrousseau/remark-config");
 ```
 
-### In ES Module Configuration (`.remarkrc.js`)
+### In ES Module Configuration
 
 ```js
 import config from "@sebastienrousseau/remark-config";
@@ -87,14 +81,21 @@ export default config;
 
 ---
 
-## Capabilities & Features
+## AST Markdown Linting & GFM
 
-| Capability | Details |
-|---|---|
-| **2026 Ready** | Engineered to conform strictly to modern ECMAScript and Remark standards. |
-| **Zero Side Effects** | Pure configuration exports with zero unnecessary runtime overhead. |
-| **Dual Export** | Native support for both CommonJS (`require`) and ES Modules (`import`). |
-| **TypeScript Support** | Includes first-class TypeScript definition files (`index.d.ts`). |
+Integrates remark-gfm and recommended lint presets for consistent Markdown AST parsing.
+
+### Before (Unstandardized)
+
+```javascript
+[link] (http://example.com)
+```
+
+### After (@sebastienrousseau/remark-config Enforced)
+
+```javascript
+[link](https://example.com)
+```
 
 ---
 
@@ -112,31 +113,34 @@ This package exports dual module entrypoints via `package.json` `exports`:
 }
 ```
 
+Full TypeScript definitions (`index.d.ts`) are included for rich IDE autocomplete and inline JSDoc tooltips.
+
 ---
 
-## Development & Verification
-
-### Local Testing
+## Development & Testing
 
 ```bash
-# Clone the repository
+# Clone repository
 git clone https://github.com/sebastienrousseau/remark-config.git
 cd remark-config
 
-# Run the validation test suite
+# Run validation tests
 npm test
 ```
 
 ---
 
-## Security & Attestation
+## Security & Compliance
 
-- **SLSA Level 3**: Every package build is signed with keyless provenance via GitHub Actions.
-- **Dependency Auditing**: Automated vulnerability scans via `npm audit` and OpenSSF Scorecards.
-- **Zero Unpinned Dependencies**: Strict dependency management prevents supply chain vulnerabilities.
+- **SLSA Level 3 Provenance**: Builds are cryptographically signed with keyless provenance via GitHub Actions.
+- **Automated Security Audit**: Monitored continuously with CodeQL and Dependabot.
+- **Commit Signatures**: All commits are SSH/GPG signed.
+- See [SECURITY.md](SECURITY.md) for vulnerability reporting procedures.
 
 ---
 
-## License
+## Author & License
 
-[ISC License](LICENSE) © [Sebastien Rousseau](https://github.com/sebastienrousseau)
+Developed and maintained by **[Sebastien Rousseau](https://github.com/sebastienrousseau)**.
+
+Released under the [ISC License](LICENSE).
