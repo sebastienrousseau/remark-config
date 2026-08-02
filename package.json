@@ -1,6 +1,6 @@
 {
   "name": "@sebastienrousseau/remark-config",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Shareable Remark lint configuration files and rules adhering to 2026 standards",
   "author": "Sebastien Rousseau <sebastienrousseau@users.noreply.github.com>",
   "license": "ISC",
