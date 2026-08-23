@@ -3,7 +3,7 @@
   "version": "0.0.2",
   "description": "Shareable Remark lint configuration files and rules adhering to 2026 standards",
   "author": "Sebastien Rousseau <sebastienrousseau@users.noreply.github.com>",
-  "license": "ISC",
+  "license": "Apache-2.0 OR MIT",
   "homepage": "https://github.com/sebastienrousseau/remark-config#readme",
   "repository": {
     "type": "git",
