@@ -1,12 +1,6 @@
 /**
- * Advanced usage example with custom overrides for @sebastienrousseau/remark-config
+ * Advanced Remark plugin extension
  */
-const baseConfig = require("../index.cjs");
-
-const customConfig = Object.assign({}, baseConfig, {
-  _custom: true,
-  _timestamp: new Date().toISOString()
-});
-
-console.log("Custom extended configuration created:");
-console.log(customConfig._custom ? "Custom configuration active" : "Error");
+const base = require("../index.cjs");
+const custom = { ...base, plugins: [...base.plugins, "remark-toc"] };
+console.log("Extended plugins count:", custom.plugins.length);
