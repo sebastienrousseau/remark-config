@@ -1,7 +1,7 @@
 site_name = "remark-config"
 site_title = "@sebastienrousseau/remark-config — Shareable Remark lint configuration files and rules adhering to 2026 standards"
 site_description = "Shareable Remark lint configuration files and rules adhering to 2026 standards"
-base_url = "https://config.sebastienrousseau.com/remark-config"
+base_url = "https://sebastienrousseau.com/remark-config/"
 language = "en-GB"
 
 content_dir = "web/content"
