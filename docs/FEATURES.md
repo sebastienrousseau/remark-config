@@ -21,14 +21,18 @@ An exhaustive overview covering **100% of the features, rules, and capabilities*
 ## Feature Deep Dive
 
 ### 1. Recommended Linting
+
 Includes remark-preset-lint-recommended diagnostic rules. Designed to guarantee deterministic behavior across all development and continuous integration environments.
 
 ### 2. Style Guide Compliance
+
 Includes remark-preset-lint-markdown-style-guide rules. Designed to guarantee deterministic behavior across all development and continuous integration environments.
 
 ### 3. Consistency Engine
+
 Includes remark-preset-lint-consistent marker enforcement. Designed to guarantee deterministic behavior across all development and continuous integration environments.
 
 ### 4. GitHub Flavored Markdown
+
 Includes remark-gfm parser support. Designed to guarantee deterministic behavior across all development and continuous integration environments.
 
