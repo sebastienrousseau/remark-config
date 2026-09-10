@@ -1,3 +1,6 @@
+// SPDX-FileCopyrightText: 2026 Sebastien Rousseau <sebastian.rousseau@gmail.com>
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
 /**
  * 100% Feature Showcase for @sebastienrousseau/remark-config
  */
@@ -12,5 +15,5 @@ assert(config.plugins.includes("remark-preset-lint-consistent"));
 assert(config.plugins.includes("remark-gfm"));
 
 console.log("  ✓ Active plugins count:", config.plugins.length);
-config.plugins.forEach(p => console.log(`  ✓ Plugin: ${p}`));
+config.plugins.forEach((p) => console.log(`  ✓ Plugin: ${p}`));
 console.log("✅ 100% of remark-config presets and features validated.");
