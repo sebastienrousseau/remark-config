@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Security
+
+- `package-lock.json` moves brace-expansion 2.1.4 to 2.1.7 (Dependabot alert: high).
+
 ## [0.0.7] - 2026-09-10
 
 ### Added
