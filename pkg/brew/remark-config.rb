@@ -6,7 +6,7 @@
 class RemarkConfig < Formula
   desc "Shareable Remark lint configuration files and rules adhering to 2026 standards"
   homepage "https://github.com/sebastienrousseau/remark-config"
-  url "https://registry.npmjs.org/@sebastienrousseau/remark-config/-/remark-config-0.0.7.tgz"
+  url "https://registry.npmjs.org/@sebastienrousseau/remark-config/-/remark-config-0.0.9.tgz"
   license any_of: ["Apache-2.0", "MIT"]
 
   depends_on "node"

@@ -1,6 +1,6 @@
 # Maintainer: Sebastien Rousseau <sebastian.rousseau@gmail.com>
 pkgname=nodejs-sebastienrousseau-remark-config
-pkgver=0.0.7
+pkgver=0.0.9
 pkgrel=1
 pkgdesc="Shareable Remark lint configuration files and rules adhering to 2026 standards"
 arch=('any')
